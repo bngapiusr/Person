@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>PersonDemo.Web</AssemblyName>
+    <RootNamespace>PersonDemo.Web</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,6 +12,10 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Person.Data\Person.Data.csproj" />
   </ItemGroup>
 
 </Project>

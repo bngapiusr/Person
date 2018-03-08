@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Person.DomainClasses
+namespace PersonDemo.DomainClasses
 {
-    public class Person
+    public class PersonInfo
     {
-        public int PersonId { get; set; }
+        public int PersonInfoId { get; set; }
         public string FirstName { get; set; }
         public string MiddleName { get; set; }
         public string LastName { get; set; }
