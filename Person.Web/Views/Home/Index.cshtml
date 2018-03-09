@@ -1,0 +1,21 @@
+﻿@model PersonDemo.Web.ViewModels.HomeViewModel
+@{
+    Layout = null;
+}
+
+<h2>@Model.Title</h2>
+
+<div>
+    @foreach (var p in Model.People)
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <h3>
+                List of Person
+            </h3>
+            <p>@p.FirstName</p> 
+            <p>@p.MiddleName</p> 
+            <p>@p.LastName</p> 
+        </div>
+    
+    }
+</div>

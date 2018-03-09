@@ -10,7 +10,7 @@ namespace PersonDemo.ConsoleApp
         static void Main(string[] args)
         {
 
-            using (var context = new PersonDbContext())
+            using (var context = new PeopleDbContext())
             {
                 AddData();
                 // AddExtraAuthorOk();
@@ -23,7 +23,7 @@ namespace PersonDemo.ConsoleApp
                 Console.WriteLine("getting a list of authors");
                 foreach (var person in people)
                 {
-                    Console.WriteLine("The Author Name is: " + person.FirstName + "," + person.LastName + ".");
+                    Console.WriteLine("The Person Name is: " + person.FirstName + "," + person.LastName + ".");
                 }
 
                 // pause the screen
@@ -33,7 +33,7 @@ namespace PersonDemo.ConsoleApp
 
         private static void AddData()
         {
-            using (var contx = new PersonDbContext())
+            using (var contx = new PeopleDbContext())
             {
 
                 var p = new PersonInfo

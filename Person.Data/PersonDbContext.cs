@@ -1,23 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PersonDemo.DomainClasses;
-//using Person = Person.DomainClasses.Person;
 
 namespace PersonDemo.Data
 {
     public class PersonDbContext : DbContext
     {
-        //public PersonDbContext(DbContextOptions<PersonDbContext> options)
-        //    : base(options)
-        //{ }
-
-        private const string ConnectionString = @"Server=.\;
-                                                  Database=Person;
-                                                  Trusted_Connection=True";
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(ConnectionString);
-        }
+        public PersonDbContext(DbContextOptions<PersonDbContext> options)
+            : base(options)
+        { }
 
         public DbSet<PersonInfo> PersonInfo { get; set; }
         public DbSet<Customer> Customer { get; set; }
