@@ -38,22 +38,22 @@ namespace PersonDemo.Web.Controllers
         //    return View();
         //}
 
-        //// POST: Home/Create
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Create(IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        // TODO: Add insert logic here
+        // POST: Home/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(HomeViewModel c)
+        {
+            try
+            {
+                // TODO: Add insert logic here
 
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
 
         //// GET: Home/Edit/5
         //public ActionResult Edit(int id)
